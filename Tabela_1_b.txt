@@ -1,0 +1,30 @@
+algoritmo Tabela_1_b
+funcao Ret : caractere
+inicio
+   para l de 1 ate 6 faca
+      para c de 1 ate 6 faca
+         retorne tab[l,c]
+         tab[l,c] <- "[x]"
+         tab[5,1] <- "[E]"
+         tab[5,2] <- "[ ]"
+         tab[4,2] <- "[ ]"
+         tab[3,2] <- "[ ]"
+         tab[3,3] <- "[ ]"
+         tab[2,3] <- "[ ]"
+         tab[2,4] <- "[ ]"
+         tab[2,5] <- "[ ]"
+         tab[3,5] <- "[ ]"
+         tab[4,5] <- "[ ]"
+         tab[5,5] <- "[ ]"
+         tab[5,6] <- "[S]"
+         escreva (tab[l,c])
+      fim_para
+      escreval ()
+   fim_para
+fim_funcao
+var
+   Tab: vetor[1..6,1..6] de caractere
+   l, c, T1: inteiro
+inicio
+      escreva (ret)
+fim.

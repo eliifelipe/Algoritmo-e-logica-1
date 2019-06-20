@@ -1,0 +1,18 @@
+algoritmo Tabela_1_a
+funcao Ret : caractere
+inicio
+      para l de 1 ate 6 faca
+           para c de 1 ate 6 faca
+           retorne tab[l,c]
+           tab[l,c] <- "[x]"
+           escreva (tab[l,c])
+           fim_para
+           escreval ()
+      fim_para
+fim_funcao
+var
+   l, c: inteiro
+   Tab: vetor[1..6,1..6] de caractere
+inicio
+escreva (ret)
+fim.

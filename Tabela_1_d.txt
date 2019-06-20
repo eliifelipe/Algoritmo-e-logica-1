@@ -1,0 +1,43 @@
+algoritmo Tabela_1_d
+funcao tabfunc1 : caractere
+inicio
+   escreva ("Tecle [1] para exibir Tabuleiro com [X]: ")
+   leia (T1)
+   se T1 = 1 entao
+      para l de 1 ate 6 passo 1 faca
+         para c de 1 ate 6 passo 1 faca
+            retorne tab[l,c]
+            tab[l,c] <- "[x]"
+            escreva (tab[l,c])
+         fim_para
+         escreval ()
+      fim_para
+   senao
+      escreval ("Valor invalido")
+   fim_se
+fim_funcao
+funcao tabfunc2 : caractere
+inicio
+   escreva ("Tecle [2] para exibir Tabuleiro com [X][E][S]: ")
+   leia (T1)
+   se T1 = 2 entao
+      para l de 1 ate 6 passo 1 faca
+         para c de 1 ate 6 passo 1 faca
+            tab[l,c] <- "[x]"
+            tab[5,1] <- "[E]"
+            tab[5,6] <- "[S]"
+            escreva (tab[l,c])
+         fim_para
+         escreval ()
+      fim_para
+   senao
+      escreval ("Valor invalido")
+   fim_se
+fim_funcao
+var
+   Tab: vetor[1..6,1..6] de caractere
+   l, c, T1: inteiro
+inicio
+   escreva (tabfunc1)
+   escreva (tabfunc2)
+fim.
