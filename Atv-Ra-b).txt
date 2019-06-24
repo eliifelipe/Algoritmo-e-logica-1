@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main(){
+    const char * ra[]= {"1","9","9","8","9","6","0","5"};
+    int vet[8];
+    /*for (int i=0; i < 8; i++){
+       vet[i]=ra[i];
+       printf(vet[i]);
+    }*/
+	return 0;
+}
